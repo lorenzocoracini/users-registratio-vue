@@ -13,7 +13,6 @@
               <v-toolbar-title>Todos os Usuários</v-toolbar-title>
             </v-toolbar>
           </template>
-          <!-- Defina células para cada informação do usuário -->
           <template v-for="header in headers" :key="header.value" v-slot:[`item.${header.value}`]="{ item }">
             <td>{{ item[header.value] }}</td>
           </template>
@@ -29,9 +28,8 @@
   export default defineComponent({
     setup() {
       const usersStore = useUsersStore();
-      const users = usersStore.users; // Obtém todos os usuários cadastrados
+      const users = usersStore.users; 
   
-      // Defina os cabeçalhos da tabela
       const headers = [
         { text: 'Nome', value: 'name' },
         { text: 'E-mail', value: 'email' },

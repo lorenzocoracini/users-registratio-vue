@@ -1,7 +1,6 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer">
-      <!--  -->
       <v-list>
         <router-link v-for="(item, i) in items" :key="i" :to="item.to">
           <v-list-item>{{ item.name }}</v-list-item>
