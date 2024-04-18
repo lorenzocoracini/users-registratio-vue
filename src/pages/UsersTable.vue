@@ -1,5 +1,6 @@
 <template>
     <UserTable/>
+    <AppFooter/>
   </template>
   
   <script>

@@ -1,5 +1,6 @@
 <template>
     <UserByOrigin/>
+    <AppFooter/>
   </template>
   
   <script>

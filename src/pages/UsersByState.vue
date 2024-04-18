@@ -1,5 +1,6 @@
 <template>
   <UserByState />
+  <AppFooter/>
 </template>
 
 <script>

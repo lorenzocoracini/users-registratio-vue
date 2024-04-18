@@ -1,6 +1,6 @@
 <template>
   <AppHome />
-  <app-footer></app-footer>
+  <AppFooter/>
 </template>
 
 <script setup>
