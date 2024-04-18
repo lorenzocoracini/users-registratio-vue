@@ -1,6 +1,5 @@
 <template>
-  <UserForms/>
-  <AppFooter/>
+  <h1> usuario por origem</h1>
 </template>
 
 <script>

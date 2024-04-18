@@ -1,5 +1,6 @@
 <template>
-  <HelloWorld />
+  <AppHome />
+  <app-footer></app-footer>
 </template>
 
 <script setup>

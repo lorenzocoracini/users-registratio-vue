@@ -1,5 +1,5 @@
 <template>
-    <h1>Relatório de usuarios por origem</h1>
+    <UserByOrigin/>
   </template>
   
   <script>

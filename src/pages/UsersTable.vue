@@ -1,5 +1,5 @@
 <template>
-    <h1>Tabela de usuarios cadastrados</h1>
+    <UserTable/>
   </template>
   
   <script>
