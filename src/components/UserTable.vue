@@ -7,6 +7,9 @@
           :items="users"
           item-key="id"
           class="elevation-1"
+          no-data-text="Nenhum dado disponível"
+          items-per-page-text="Itens por página"
+          
         >
           <template v-slot:top>
             <v-toolbar flat>
