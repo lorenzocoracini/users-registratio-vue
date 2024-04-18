@@ -5,7 +5,6 @@
         <p class="subtitle">Este sistema permite que você cadastre novos usuários e visualize informações sobre eles.</p>
         <v-row justify="center">
           <v-btn color="primary" class="mr-4" @click="navigateTo('/userForm')">Cadastrar Usuário</v-btn>
-          <v-btn color="primary" @click="navigateTo('/usersTable')">Ver Todos os Usuários</v-btn>
         </v-row>
       </v-container>
     </div>
