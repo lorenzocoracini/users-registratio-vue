@@ -49,7 +49,7 @@ export default defineComponent({
         name: '',
         email: '',
         cep: '',
-        origin: '',
+        origin: 'Digital',
         street: '',
         city: '',
         state: ''
