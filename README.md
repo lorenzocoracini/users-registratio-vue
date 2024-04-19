@@ -6,6 +6,7 @@ Sistema de registro e visualização de usuários.
 -  [Vue.js](https://vuejs.org/)
 -  [Vuetify.js](https://vuetifyjs.com/)
 -  [Pinia.js](https://pinia.vuejs.org/)
+-  [Apexcharts.js](https://apexcharts.com/)
 
 ##  Instalação
 
