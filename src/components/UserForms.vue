@@ -7,7 +7,6 @@
             v-model="formData.name"
             label="Nome"
             required
-            style="font-size: 3px;"
           ></v-text-field>
         </v-col>
         <v-col cols="12" md="6">
