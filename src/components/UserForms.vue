@@ -50,7 +50,9 @@
         <v-col cols="12">
           <v-btn type="submit" color="primary">Cadastrar</v-btn>
           <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
-          <p v-else-if="successMessage" class="success-message">{{ successMessage }}</p>
+          <p v-else-if="successMessage" class="success-message">
+            {{ successMessage }}
+          </p>
         </v-col>
       </v-row>
     </v-form>
@@ -96,18 +98,25 @@ export default defineComponent({
     },
     submitForm() {
       const usersStore = useUsersStore();
+      if (!this.formData.email.trim()) {
+        this.errorMessage = "Por favor, insira um e-mail válido.";
+        setTimeout(() => {
+          this.errorMessage = "";
+        }, 2000);
+        return;
+      }
       const existingUser = usersStore.users.find(
         (u) => u.email === this.formData.email
       );
       if (existingUser) {
         this.errorMessage = "E-mail já cadastrado.";
         setTimeout(() => {
-        this.errorMessage = "";
-      }, 2000);
+          this.errorMessage = "";
+        }, 2000);
         return;
       }
       usersStore.addUser(this.formData);
-      this.successMessage = "Cadastro realizado com sucesso!"
+      this.successMessage = "Cadastro realizado com sucesso!";
       this.formData = {
         name: "",
         email: "",
@@ -135,5 +144,4 @@ export default defineComponent({
   margin-top: 5px;
   color: black;
 }
-
 </style>
