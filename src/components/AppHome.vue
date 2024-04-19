@@ -4,7 +4,7 @@
         <h1 class="headline">Bem-vindo ao SistemaRegistra</h1>
         <p class="subtitle">Este sistema permite que você cadastre novos usuários e visualize informações sobre eles.</p>
         <v-row justify="center">
-          <v-btn color="primary" class="mr-4" @click="navigateTo('/userForm')">Cadastrar Usuário</v-btn>
+          <v-btn color="primary" class="button" @click="navigateTo('/userForm')">Cadastrar Usuário</v-btn>
         </v-row>
       </v-container>
     </div>
@@ -27,13 +27,19 @@
   }
   
   .headline {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-bottom: 20px;
+    margin-top: 45px;
   }
   
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     margin-bottom: 30px;
+  }
+
+  .button {
+    border-radius:5px;
+    font-size: 18px;
   }
   </style>
   
