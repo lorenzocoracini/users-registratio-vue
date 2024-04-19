@@ -1,9 +1,9 @@
 <template>
-  <v-footer color="#B7E1A7" dark class="footer">
+  <v-footer color="#1693a5" dark class="footer">
     <v-container>
       <v-row align="center">
         <v-col cols="12">
-          <p class="white--text text-center">SistemaRegistra</p>
+          <p class="white--text text-center">SistemaRegistra ®</p>
         </v-col>
       </v-row>
     </v-container>
