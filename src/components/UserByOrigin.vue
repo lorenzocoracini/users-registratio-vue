@@ -40,7 +40,6 @@ export default defineComponent({
       return countByOrigin;
     });
 
-    // Preparar os dados para o gráfico de pizza
     const chartOptions = computed(() => {
       return {
         labels: Object.keys(userCountByOrigin.value),
